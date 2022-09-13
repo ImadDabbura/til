@@ -4,7 +4,7 @@ For immutable objects, inplace operation such as "+=" creates a new object and a
 s = "test"
 old_id = id(s)
 s += " another test"
-old_id == id(s) #=> True
+old_id == id(s) #=> False
 ```
 
 But for mutable objects, it doesn't create a new object. It extends/updates the existing object.
