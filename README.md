@@ -10,6 +10,7 @@ Inspired by [Learn In Public](https://www.swyx.io/learn-in-public/) and [Josh Br
 
 * [chrome](chrome/)
 * [python](python/)
+* [pytorch](pytorch/)
 * [shell](shell/)
 * [vim](vim/)
 
