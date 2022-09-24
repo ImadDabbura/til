@@ -33,4 +33,9 @@ def import_module(modname):
     # Execute the code in the module from top to bottom
     # And update the state (globals) in the module's dictionary
     exec(code, mod.__dict__)
+
+    # We return the cached one in case there is some patching inside the module
+    return sys.modules[modname]
 ```
+
+Finally, Python puts a lock when importing a module until it is done so that we don't have multiple threads trying to import the same module at the same time.
