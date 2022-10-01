@@ -8,6 +8,7 @@ Inspired by [Learn In Public](https://www.swyx.io/learn-in-public/) and [Josh Br
 
 ## Categories
 
+* [c](c/)
 * [chrome](chrome/)
 * [python](python/)
 * [pytorch](pytorch/)
