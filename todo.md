@@ -1,0 +1,3 @@
+- Python:
+    - Can't use a variable defined in a function before defining it even if the variable exists in the outer scope(s) because interpreter compile the code and determines that the variable is a local variable
+        - We can either use global construct if it is global or nonlocal if it free variable in closure. But this would change the variable in all scopes.
