@@ -14,6 +14,7 @@ Inspired by [Learn In Public](https://www.swyx.io/learn-in-public/) and [Josh Br
 * [Pytorch](pytorch/)
 * [Shell](shell/)
 * [SQL](sql/)
+* [tmux](tmux/)
 * [Vim](vim/)
 
 ## Other TIL Collection
