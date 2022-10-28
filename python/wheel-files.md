@@ -56,12 +56,14 @@
 - We can use CI pipelines such as GithubActions to test the package on multiple platforms
 - [check-wheel-contents](https://github.com/jwodder/check-wheel-contents) is a tool that helps detecting any problems with the wheel file
 - [TestPyPI](https://packaging.python.org/en/latest/guides/using-testpypi/) allows us to test the wheel file as if it's a real thing:
-    - We first upload it to TestPyPI: ` python -m twine upload \
-      --repository-url https://test.pypi.org/legacy/ \
-      dist/*`
-    - Then try to install it and see if the wheel file works correctly: ` python -m pip install \
-      --index-url https://test.pypi.org/simple/ \
-      <pkg-name>`
+    - We first upload it to TestPyPI: 
+    ```bash
+    python -m twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+    ```
+    - Then try to install it and see if the wheel file works correctly: 
+    ```bash
+    python -m pip install --index-url https://test.pypi.org/simple/ <pkg-name>
+    ```
 - We can use [twine](https://github.com/pypa/twine) tool to upload the package to PyPI:
     - Update twine: `python -m pip install -U twine`
     - Upload package: `python -m twine upload dist/*` which uploads both source distribution sdist and wheel file bdist_wheel. By default they will be is dist directory
