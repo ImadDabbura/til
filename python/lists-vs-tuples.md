@@ -55,3 +55,4 @@ sys.getsizeof(list(iter(range(10)))) #=> 136
         Py_ssize_t allocated;
     } PyListObject;
     ```
+**Conclusion**: Use tuples as immutable lists to 1) clarify that its length won't change and 2) get a little of speed up due to some optimizations the Python interpretter may do as a result of some of the above.
