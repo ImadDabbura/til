@@ -4,6 +4,9 @@
 
 In an effort to learn in public, this repo is a collection things that I learn day-to-day mainly in technology and languages.
 
+The same `til` posts can also be found at my [website](https://imaddabbura.github.io/til.html) that looks much nicer and
+easier to navigate and search.
+
 Inspired by [Learn In Public](https://www.swyx.io/learn-in-public/) and [Josh Branchaud's TIL repo](https://github.com/jbranchaud/til).
 
 ## Categories
