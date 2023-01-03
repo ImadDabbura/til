@@ -1,5 +1,5 @@
 Instead of creating a class to implement the context manager protocol
-(`__enter__` & `__exit__`), we can use `@contextmanager` from `contextlib`
+(`__enter__` & `__exit__`), we can use `@contextmanager` decorator from `contextlib`
 library to decorate any generator function with a single `yield` statement.
 This done by wrapping the function in a class that implements the `__enter__`
 and `__exit__` methods.
