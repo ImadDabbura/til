@@ -1,4 +1,4 @@
-`@property` is a a descriptor that shadows instance attributes of the same name
+`@property` implements full descriptor protocol (class that implements a dynamic protocol consisting of `__set__`, `__get__`, and `__delete__`) that shadows instance attributes of the same name
 when we try to access/set/delete instance attributes.
 
 The signature of `property` constructor is `property(fget=None, fset=None,
