@@ -1,0 +1,2 @@
+- **Overriding** descriptors are descriptors that implement `__set__`. Therefore, the user can't shadow any attribute that is defined as an overriding descriptor because any assignment at the to the instance's attribute will be force to go through the `__set__` method.
+- **Non-overriding** descriptors are descriptors that don't implement `__set__`. This means that the user can shadow the attribute. The common example of a non-overriding descriptor is the instance methods. They are actually implemented using non-overriding descriptor with `__get__` method.
